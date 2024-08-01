@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Holiday</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            height: 50px; 
+            width: auto;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header h1, header h2 {
+            margin: 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 5px;
+        }
+
+        .search-container {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .search-container form {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            width: 70%;
+            max-width: 300px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .search-container input[type="submit"] {
+            padding: 5px 10px;
+            border-radius: 0 5px 5px 0;
+            border: 1px solid #007bff;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 20px;
+            width: 100%;
+            max-width: 250px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        main {
+            padding: 20px;
+            width: calc(100% - 40px);
+            box-sizing: border-box;
+            text-align: justify;
+            flex: 1;
+        }
+
+        aside {
+            background-color: #fff;
+            padding: 20px;
+            width: 100%;
+            max-width: 250px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        section, aside {
+            border-radius: 5px;
+        }
+
+        .recommended-places {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .place {
+            text-align: justify;
+        }
+
+        .place img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .place p {
+            margin-top: 10px;
+        }
+
+        .media-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .media-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header img {
+                height: 40px;
+            }
+
+            .search-container input[type="text"] {
+                width: 60%;
+            }
+
+            nav, aside {
+                width: 100%;
+            }
+
+            main {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .media-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 0;
+            }
+
+            .search-container input[type="text"] {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            main, nav, aside {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://c.kaskus.id/kaskus_forum_image/p4lacd_1519366831.579_.jpg" alt="Header Image">
+        <div>
+            <h1>My Holiday</h1>
+            <h2>Experience the Best of Your Vacation</h2>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <form action="#" method="get">
+            <input type="text" placeholder="Search.." name="search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bullet-numbering.html">Bullet Numbering</a></li>
+                <li><a href="tugas tabel.html">Tabel</a></li>
+                <li><a href="frame.html">Frame</a></li>
+                <li><a href="iframe.html">iFrame</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>My Holiday</h2>
+                <p>July 14, 2024</p>
+                <img src="https://img.inews.co.id/files/inews_new/2022/11/01/taman_langit_pangalengan.jpg" alt="Taman Langit Pangalengan">
+                <p>Taman Langit Pangalengan adalah destinasi wisata yang menawarkan pemandangan alam yang menakjubkan di daerah Pangalengan, Jawa Barat. Terletak di ketinggian, taman ini menyediakan panorama indah pegunungan, perkebunan teh, dan danau yang memukau. Keindahan alamnya yang segar dan udara yang sejuk membuatnya menjadi tempat ideal untuk melarikan diri dari rutinitas sehari-hari.</p>
+                <p>Di Taman Langit Pangalengan, pengunjung dapat menikmati berbagai aktivitas luar ruangan seperti trekking, bersepeda, dan berfoto dengan latar belakang pemandangan alam yang menakjubkan. Selain itu, tempat ini juga dikenal dengan area-area bersantai yang dikelilingi oleh pemandangan hijau, membuat setiap kunjungan menjadi pengalaman yang menyegarkan dan menenangkan.</p>
+                <p>Jangan lewatkan kesempatan untuk mengunjungi Taman Langit Pangalengan dan menikmati keindahan alam yang ditawarkannya!</p>
+                
+                <div class="media-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nD6gCi1Cc0Y?si=9BQUEx6LT5e4nxKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung elemen audio.
+                    </audio>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Our Recommended Places</h3>
+            <div class="recommended-places">
+                <div class="place">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.-WhzmACE04kCnSVmzeZLOgHaFj&pid=Api&P=0&h=180" alt="Taman Nasional Komodo">
+                    <h3>Taman Nasional Komodo</h3>
+                    <p>Taman Nasional Komodo terkenal dengan keanekaragaman hayati yang luar biasa, termasuk spesies komodo, reptil terbesar di dunia. Taman ini juga memiliki keindahan alam bawah laut yang menakjubkan.</p>
+                    <a href="#">Read more > </a>
+                </div>
+
+                <div class="place">
+                    <img src="https://indonesiatraveler.id/wp-content/uploads/2021/01/Lumajang-Air-Terjun-Tumpak-Sewu-dan-panorama-Sekitar-Photo-by@-airterjuntumpaksewu-476x420.png" alt="Air Terjun Tumpak Sewu">
+                    <h3>Air Terjun Tumpak Sewu</h3>
+                    <p>Dikenal juga sebagai Coban Sewu, air terjun ini memiliki bentuk melingkar yang menyerupai tirai raksasa. Terletak di perbatasan Lumajang dan Malang, Jawa Timur, Tumpak Sewu menawarkan pemandangan yang spektakuler.</p>
+                    <a href="#">Read more > </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Holiday. All rights reserved.</p>
+        <p>&copy; Ahmad Irfan Fauzi</p>
+    </footer>
+</body>
+</html>

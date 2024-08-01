@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penomoran Bullet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 25%;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        aside {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 25%;
+            box-sizing: border-box;
+            border-left: 1px solid #ddd;
+        }
+
+        main ul {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        main ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+            border-top: 1px solid #0056b3;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav, main, aside {
+                width: 100%;
+                border: none;
+                padding: 10px;
+            }
+
+            nav {
+                border-bottom: 1px solid #ddd;
+            }
+
+            main {
+                order: 2;
+            }
+
+            aside {
+                order: 1;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Holiday</h1>
+        <h2>Ahmad Irfan Fauzi</h2>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="bullet-numbering.html">Penomoran Bullet</a></li>
+                <li><a href="tugas tabel.html">Tabel</a></li>
+                <li><a href="frame.html">Frame</a></li>
+                <li><a href="iframe.html">iFrame</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Daftar Barang Bawaan</h2>
+            <p>Atur barang bawaan Anda dengan daftar berguna ini:</p>
+            <ul>
+                <li>Dokumen Perjalanan</li>
+                <li>Pakaian</li>
+                <li>Aksesori Perjalanan</li>
+            </ul>
+            <p>Pastikan Anda membawa semua yang Anda butuhkan untuk perjalanan yang lancar dan menyenangkan.</p>
+        </main>
+
+        <aside>
+            <h3>Barang Bawaan Penting</h3>
+            <ul>
+                <li>Dokumen ID</li>
+                <li>Vaksinasi</li>
+                <li>Obat-obatan</li>
+                <li>Charger Elektronik</li>
+                <li>Yang paling penting Duit</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Liburan Saya. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

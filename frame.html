@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 20px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        main {
+            padding: 20px;
+            width: 60%;
+            box-sizing: border-box;
+            text-align: justify;
+            flex: 1;
+        }
+
+        aside {
+            background-color: #fff;
+            padding: 20px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        section, aside {
+            border-radius: 5px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav, main, aside {
+                width: 100%;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav li {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            iframe {
+                height: 200px;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Holiday</h1>
+        <h2>Ahmad Irfan Fauzi</h2>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="bullet-numbering.html">Penomoran Bullet</a></li>
+                <li><a href="tabel.html">Tabel</a></li>
+                <li><a href="frame.html">Frame</a></li>
+                <li><a href="iframe.html">iFrame</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Contoh Penggunaan Frame</h2>
+            <p>Berikut adalah contoh penggunaan frame untuk menampilkan konten dari situs lain:</p>
+            <iframe src="https://www.indonesia.travel/id/id/home.html" title="Example Website"></iframe>
+            <p>Gunakan iframe untuk menyematkan konten dari sumber lain secara langsung di halaman Anda.</p>
+        </main>
+
+        <aside>
+            <h3>Tips Penggunaan Frame</h3>
+            <ul>
+                <li>Pastikan sumber frame aman dan terpercaya.</li>
+                <li>Periksa responsifitas frame pada berbagai perangkat.</li>
+                <li>Gunakan attribute <code>title</code> untuk meningkatkan aksesibilitas.</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Liburan Saya. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
